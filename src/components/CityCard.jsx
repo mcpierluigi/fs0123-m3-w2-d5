@@ -25,12 +25,13 @@ const CityCard = props => {
   //compongo facendo dipendere da lat e lon
   useEffect(() => {
     fetchCityObj();
+    // eslint-disable-next-line
   }, [props.lat, props.lon]);
 
   return (
     <>
       {cityObj ? (
-        <Container fluid>
+        <Container>
           <Row>
             <Col className="city" sm={12}>
               {cityObj.name}

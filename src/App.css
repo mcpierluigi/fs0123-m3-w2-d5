@@ -1,5 +1,8 @@
 * {
-  background-color: palevioletred;
+  background-color: paleturquoise;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
@@ -16,10 +19,6 @@
   font-size: 80px;
   font-weight: bold;
   margin-top: -10px;
-}
-
-.percepiti {
-  font-style: italic;
 }
 
 .alert {
