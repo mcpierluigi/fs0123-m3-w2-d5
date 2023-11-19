@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import { Form, Container, Row, Col } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import CityCard from "./components/CityCard";
 import CityForecast from "./components/CityForecast";
 import "./App.css";
@@ -41,17 +41,9 @@ const App = () => {
       <Form className="py-2 w-90 mx-3" onSubmit={handleSubmit}>
         <Form.Control type="text" placeholder="search city" value={cityName} onChange={handleChange} />
       </Form>
-      <Container>
-        {/* passaggio di lat e lon come props */}
-        <Row>
-          <Col sm={12} md={6}>
-            <CityCard lat={lat} lon={lon} />
-          </Col>
-          <Col sm={12} md={6}>
-            <CityForecast lat={lat} lon={lon} />
-          </Col>
-        </Row>
-      </Container>
+      {/* passaggio di lat e lon come props */}
+      <CityCard lat={lat} lon={lon} />
+      <CityForecast lat={lat} lon={lon} />
     </>
   );
 };

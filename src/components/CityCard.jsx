@@ -41,17 +41,20 @@ const CityCard = props => {
             <Col className="tempo" sm={12}>
               {cityObj.main.temp}°
             </Col>
+            <Col sm={12}>{cityObj.weather[0].description} 🔭</Col>
             <Col className="percepiti" sm={12}>
               percepiti: {cityObj.main.feels_like}°
             </Col>
             <Col sm={12}>temp-max: {cityObj.main.temp_max}° 🥵</Col>
             <Col sm={12}>temp-min: {cityObj.main.temp_min}° 🥶</Col>
+            <Col sm={12}>pressione: {cityObj.main.pressure}% 🌡️</Col>
+            <Col sm={12}>umidità: {cityObj.main.humidity}% 💧</Col>
           </Row>
         </Container>
       ) : (
         <Container>
           <Alert className="mt-3 text-center" variant="danger">
-            search a city to see the climate
+            cerca una città per vederne il clima 😊
           </Alert>
         </Container>
       )}

@@ -1,8 +1,8 @@
 * {
-  background-color: paleturquoise;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 .App {
@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.percepiti {
+  font-style: italic;
+}
+
 .tempo {
   font-size: 80px;
   font-weight: bold;
@@ -23,4 +27,15 @@
 
 .alert {
   width: 100%;
+}
+
+.forecast {
+  margin-top: 40px;
+}
+
+.forecast-day {
+  background-color: aliceblue;
+  color: black;
+  opacity: 50%;
+  padding-block: 20px;
 }
