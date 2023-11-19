@@ -19,7 +19,7 @@ const App = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${key}`);
+      const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${key}`);
       if (response.ok) {
         const data = await response.json();
         console.log("data obtained: ", data);
