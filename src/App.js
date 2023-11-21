@@ -39,7 +39,7 @@ const App = () => {
     <>
       <div className="App">⭐️</div>
       <Form className="py-2 w-90 mx-3" onSubmit={handleSubmit}>
-        <Form.Control type="search" placeholder="search city" value={cityName} onChange={handleChange} />
+        <Form.Control type="search" placeholder="città" value={cityName} onChange={handleChange} />
       </Form>
       {/* passaggio di lat e lon come props */}
       <CityCard lat={lat} lon={lon} />

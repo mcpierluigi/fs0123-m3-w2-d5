@@ -41,7 +41,7 @@ const CityForecast = props => {
               <br />
               {cityForecast.list[10].weather[0].description}
               <br />
-              temperatura: {cityForecast.list[10].main.temp}°
+              temperatura: {cityForecast.list[10].main.temp}°C
               <br />
               umidità: {cityForecast.list[10].main.humidity}%
             </Col>
@@ -50,7 +50,7 @@ const CityForecast = props => {
               <br />
               {cityForecast.list[18].weather[0].description}
               <br />
-              temperatura: {cityForecast.list[18].main.temp}°
+              temperatura: {cityForecast.list[18].main.temp}°C
               <br />
               umidità: {cityForecast.list[18].main.humidity}%
             </Col>
@@ -61,7 +61,7 @@ const CityForecast = props => {
               <br />
               {cityForecast.list[26].weather[0].description}
               <br />
-              temperatura: {cityForecast.list[26].main.temp}°
+              temperatura: {cityForecast.list[26].main.temp}°C
               <br />
               umidità: {cityForecast.list[26].main.humidity}%
             </Col>
@@ -70,7 +70,7 @@ const CityForecast = props => {
               <br />
               {cityForecast.list[34].weather[0].description}
               <br />
-              temperatura: {cityForecast.list[34].main.temp}°
+              temperatura: {cityForecast.list[34].main.temp}°C
               <br />
               umidità: {cityForecast.list[34].main.humidity}%
             </Col>
