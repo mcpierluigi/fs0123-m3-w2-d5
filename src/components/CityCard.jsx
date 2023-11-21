@@ -39,21 +39,21 @@ const CityCard = props => {
           </Row>
           <Row className="text-center">
             <Col className="tempo" sm={12}>
-              {cityObj.main.temp}°C
+              {cityObj.main.temp} °C
             </Col>
             <Col sm={12}>{cityObj.weather[0].description} 🔭</Col>
             <Col className="percepiti" sm={12}>
-              percepiti: {cityObj.main.feels_like}°C
+              percepiti: {cityObj.main.feels_like} °C
             </Col>
-            <Col sm={12}>temp-max: {cityObj.main.temp_max}°C 🥵</Col>
-            <Col sm={12}>temp-min: {cityObj.main.temp_min}°C 🥶</Col>
-            <Col sm={12}>pressione: {cityObj.main.pressure}hPa 🌡️</Col>
+            <Col sm={12}>temp-max: {cityObj.main.temp_max} °C 🥵</Col>
+            <Col sm={12}>temp-min: {cityObj.main.temp_min} °C 🥶</Col>
+            <Col sm={12}>pressione: {cityObj.main.pressure} hPa 🌡️</Col>
             <Col sm={12}>umidità: {cityObj.main.humidity}% 💧</Col>
           </Row>
         </Container>
       ) : (
         <Container>
-          <Alert className="mt-3 text-center" variant="danger">
+          <Alert className="mt-3 text-center" variant="info">
             cerca una città per vederne il clima 😊
           </Alert>
         </Container>
